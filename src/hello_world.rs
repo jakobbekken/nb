@@ -56,7 +56,7 @@ impl HelloWorld {
             .items_center()
             .text_xl()
             .text_color(rgb(theme::TEXT))
-            .child(format!("Hello, {}!", &self.text))
+            .child(format!("Hello, {}!", self.text))
             .child(
                 div()
                     .flex()

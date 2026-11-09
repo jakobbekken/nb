@@ -1,0 +1,39 @@
+{
+  "languages": {
+    "Rust": {
+      "tab_size": 4,
+      "formatter": "language_server",
+    },
+  },
+  "lsp": {
+    "rust-analyzer": {
+      "initialization_options": {
+        "check": {
+          "command": "clippy",
+        },
+        "cargo": {
+          "allTargets": true,
+        },
+        "diagnostics": {
+          "experimental": {
+            "enable": true,
+          },
+        },
+      },
+    },
+  },
+  "load_direnv": "direct",
+  "hard_tabs": false,
+  "tab_size": 2,
+  "formatter": "auto",
+  "format_on_save": "on",
+  "remove_trailing_whitespace_on_save": true,
+  "ensure_final_newline_on_save": true,
+  "read_only_files": ["**/*.lock"],
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.direnv",
+    "**/target",
+    "**/.DS_Store",
+  ],
+}
